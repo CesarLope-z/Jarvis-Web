@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
 }
@@ -16,32 +17,28 @@ h1{
 .flex{
     display: flex;
 }
-.grid{
-    display: grid;
-}
+
 .tronco{
+    display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: black;
-    
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
 }
+
 .tronco__queso{
-    background-color: black;
     border: 1px solid rgb(65, 235, 241);
-    margin: 0.5rem 0.255rem;
     border-radius: 0.5rem;
 }
 .tronco__queso2{
 
-    background-color: black;
     border: 1px solid rgb(115, 241, 65);
-    margin: 0.5rem 0.255rem;
     border-radius: 0.5rem;
     text-align: center;
 }
 .tronco__completo{
-    background-color: black;
     border: 1px solid rgb(65, 235, 241);
-    margin: 0.5rem 0.255rem;
     border-radius: 0.5rem;
 }
 .tronco__completo__informacion{
@@ -193,6 +190,7 @@ button{
     justify-content: space-around;
     margin: 1rem;
 }
+
 .comando{
     padding: 0 5rem;
     margin: 1.5rem;
@@ -227,3 +225,18 @@ button{
     margin: 1rem;
     padding: 0.5rem;
 }
+@media (max-width: 680px) {
+    .flex {
+        display: block;
+    }
+    .nv{
+        display: flex;
+        justify-content: space-around;
+    }
+    .tronco{
+        display: initial;
+    }
+    .tarjetasComando{
+        display:  contents;
+    }
+    }
