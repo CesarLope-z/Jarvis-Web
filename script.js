@@ -69,7 +69,7 @@ function crearHTML() {
                // crear boton de eliminar
                const botonBorrar = document.createElement('a');
                botonBorrar.classList = 'borrar-tweet';
-               botonBorrar.innerHTML = 'Borrar &times'
+               botonBorrar.innerHTML = '&times'
      
                // Crear elemento y añadirle el contenido a la lista
                const li = document.createElement('li');
