@@ -271,7 +271,7 @@ button{
         display: block;
     }
     .sticky{
-        position: absolute;
+        position: initial;
     }
     .nv{
         display: flex;
