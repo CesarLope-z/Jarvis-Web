@@ -340,9 +340,6 @@ scroll-page {
     .flex {
         display: block;
     }
-    .sticky{
-        position: initial;
-    }
     .nv{
         display: flex;
         justify-content: space-around;
