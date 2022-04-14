@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cuentas.css">
+    <link rel="stylesheet" href="css/style.css
+    ">
+    <title>Mis registros</title>
+</head>
+<body>
+    <header class='flex' >
+        <a href="index.html">
+            <h1>J.A.R.V.I.S Web <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#73f141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+            <line x1="12" y1="12" x2="20" y2="7.5" />
+            <line x1="12" y1="12" x2="12" y2="21" />
+            <line x1="12" y1="12" x2="4" y2="7.5" />
+            </svg></h1>
+        </a>
+    </header> 
+    <div>
+        <div class="grid  justifyC">
+            <form class="blur area" id="formRegistro">
+                <h2 class="verde tAC">Crear Registro</h2>
+                <div class="flex justifySA inputs">
+                    <div>
+                        <select id="tipo" class="input">
+                            <option value=" ">--Tipo--</option>
+                            <option value="1">Ingreso</option>
+                            <option value="2">Gasto</option>
+                            <option value="3">Transferencia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="cuenta" class="input">
+                            <option value=" ">--Cuenta--</option>
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="Monedero">Monedero</option>
+                            <option value="Ahorros">Ahorros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input id="dinero" type="text" class="input" placeholder="Dinero">
+                    </div>
+                    <div>
+                        <input type="text" class="input" id="categoria" placeholder="Categoria">
+                    </div>
+                    <div>
+                        <input type="submit" class="input" value="Agregar">
+                    </div>
+                </div>
+            </form>  
+        </div>
+        <div class="grid justifyC  alignItemCenter">
+            <div class="blur area">
+                <h2 class="verde">Mis registros</h2>
+                <div id="registros">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script type="module" src="js/cuentas.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+</body>
+</html>

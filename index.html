@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link rel = 'preconnect' href = 'https://fonts.googleapis.com'>
+  <link rel = 'preconnect' href = 'https://fonts.gstatic.com' crossorigin>
+  <link href = 'https: //fonts.googleapis.com/css2? family = M + PLUS + Code + Latin & family = Source + Code + Pro: wght @ 200 & display = swap 'rel =' stylesheet '>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icon.ico">
+  <title>JARVIS</title>
+</head>
+<body>
+  <header class='flex'>
+      <h1>Bienvenido a J.A.R.V.I.S Web <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#73f141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+        <line x1="12" y1="12" x2="20" y2="7.5" />
+        <line x1="12" y1="12" x2="12" y2="21" />
+        <line x1="12" y1="12" x2="4" y2="7.5" />
+      </svg></h1>
+  </header> 
+  <nav class="navi sticky fondoNegro">
+        
+        <a href="#clases">Clases</a>
+        <a href="#wallet">Billetera</a>
+        <a href='#casa' class='nav1 '>Casa</a>
+        <a href='#jarvis' class='nav1 '>Jarvis</a>
+        
+        <a href='#' class='nav1 desplegable '>Mas
+            <div class='desplegable__contenido'>
+                <ul class="sinStyle">
+                    
+                    <li class="li1">JavaScript</li>
+                    <li class="li1">React</li>
+                    <li class="li1">Electron</li>
+                    </ul>
+            </div>
+        </a>
+</nav>
+
+
+
+  <div class='tronco'>
+        <div class='tronco__queso2'>
+            <h2 class="verde">Recordatorios</h2>
+            <form id="formulario">
+                <input type="text" id="tweet" placeholder="Buscar..." class="buscar">
+                <input type="submit" id="buscar" placeholder="Buscar..." class="enviar" value="Agregar" >
+            </form>
+            <div id="contenido"></div>
+            <div id="lista-tweets"></div>
+            <svg class="girar" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkup-list" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#73f141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                <rect x="9" y="3" width="6" height="4" rx="2" />
+                <path d="M9 14h.01" />
+                <path d="M9 17h.01" />
+                <path d="M12 16l1 1l3 -3" />
+            </svg>
+            
+        </div>
+      <div class='tronco__queso' id="clases">
+          
+          <div class='infobotones'>
+               <h2 class='celeste'><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                <line x1="3" y1="6" x2="3" y2="19" />
+                <line x1="12" y1="6" x2="12" y2="19" />
+                <line x1="21" y1="6" x2="21" y2="19" />
+              </svg> Clases </h2>
+               
+               <p class='celeste'>Anotaciones o datos interesantes de las clases, en Progreso...</p>
+               <div class="horario">
+                    <img class="imgHorario" src="img/horario.jpeg" alt="horarioClases">
+               </div>
+               <form id="addNota">
+                   <div class="formulario">
+                        <p class="azul">Agrega una nota</p>
+                        <div>
+                            <select id="materia" class="azul fondoNegro">
+                                <option value=" ">--Materia--</option>
+                                <option value="Matematica">Matematica</option>
+                                <option value="Sociales">Sociales</option>
+                                <option value="Lenguaje">Lenguaje</option>
+                                <option value="Fisica">Fisica</option>
+                                <option value="Biologia">Biologia</option>
+                                <option value="Opv">Opv</option>
+                                <option value="Mucy">Mucy</option>
+                                <option value="Religion">Religion</option>
+                                <option value="Ingles">Ingles</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="tipo" class="azul fondoNegro">
+                                <option value=" ">--Tarea--</option>
+                                <option value="tareaaula">Tarea aula</option>
+                                <option value="integradora">Integradora</option>
+                                <option value="pruebaojb">Prueba objetiva</option>
+                                <option value="pruebaPer">Prueba de periodo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nota" id="notaForm" class="azul fondoNegro">
+                        </div>
+                        <div>
+                            <input type="submit" value="Agregar" class="azul fondoNegro">
+                        </div>
+                    </div>
+               </form>
+               <nav>
+                <a href="#page-1">M</a>
+                <a href="#page-2">S</a>
+                <a href="#page-3">L</a>
+                <a href="#page-4">F</a>
+                <a href="#page-5">B</a>
+                <a href="#page-6">O</a>
+                <a href="#page-7">My</a>
+                <a href="#page-8">R</a>
+                <a href="#page-9">I</a>
+              </nav>
+              <scroll-container>
+                <scroll-page id="page-1" class="materia">
+                    <h3>Matematica</h3>
+                    <div class="notas notaMatematica">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaMatematica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraMatematica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjMatematica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerMatematica pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-2" class="materia">
+                    <h3>Sociales</h3>
+                    <div class="notas notaSociales">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaSociales pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraSociales pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjSociales pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerSociales pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-3" class="materia">
+                    <h3>Lenguaje</h3>
+                    <div class="notas notaLenguaje">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaLenguaje pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraLenguaje pad"></div>
+                        </div class="flexi">
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjLenguaje pad"></div>
+                        </div class="flexi">
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerLenguaje pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-4" class="materia">
+                    <h3>Fisica</h3>
+                    <div class="notas notaFisica">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaFisica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraFisica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjFisica pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerFisica pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-5" class="materia">
+                    <h3>Biologia</h3>
+                    <div class="notas notaBiologia">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaBiologia pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraBiologia pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjBiologia pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerBiologia pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-6" class="materia">
+                    <h3>Opv</h3>
+                    <div class="notas notaOpv">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaOpv pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraOpv pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjOpv pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerOpv pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-7" class="materia">
+                    <h3>Mucy</h3>
+                    <div class="notas notaMucy">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaMucy pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraMucy pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjMucy pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerMucy pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-8" class="materia">
+                    <h3>Religion</h3>
+                    <div class="notas notaReligion">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaReligion pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraReligion pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjReligion pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerReligion pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-9" class="materia">
+                    <h3>Ingles</h3>
+                    <div class="notas notaIngles">
+                        <div class="flexi">
+                            <p class="azul">Tarea Aula: </p>
+                            <div class="tareaaulaIngles pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Integradora: </p>
+                            <div class="integradoraIngles pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba Objetiva: </p>
+                            <div class="pruebaobjIngles pad"></div>
+                        </div>
+                        <div class="flexi">
+                            <p class="azul">Prueba de periodo: </p>
+                            <div class="pruebaPerIngles pad"></div>
+                        </div>
+                    </div>
+                </scroll-page>
+              </scroll-container>
+                <!-- notas -->
+           </div>
+ 
+          
+       </div>
+      
+  </div>
+
+    <div class="tronco__completo" id="wallet">
+        <h2 class="azul title"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-businessplan" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <ellipse cx="16" cy="6" rx="5" ry="3" />
+            <path d="M11 6v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+            <path d="M11 10v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+            <path d="M11 14v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />
+            <path d="M7 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+            <path d="M5 15v1m0 -8v1" />
+          </svg>  Billetera </h2>
+        <div>
+            <div class="walletTodo">
+                <div class="cuentas"> 
+                    <div class="cuenta cuenta1">
+                        <p class="blanco">Efectivo</p>
+                        <p id="efectivo" class="blanco"></p>
+                    </div>
+                    <div class="cuenta cuenta2">
+                        <p class="blanco">Monedero</p>
+                        <p id="monedero" class="blanco"></p>
+                    </div>
+                    <div class="cuenta cuenta3">
+                        <p class="blanco">Ahorros</p>
+                        <p id="ahorro" class="blanco"></p>
+                    </div>
+                    <div class="addCuenta">
+                        <p class="azul">Agregar Cuenta</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <line x1="9" y1="12" x2="15" y2="12" />
+                            <line x1="12" y1="9" x2="12" y2="15" />
+                          </svg>
+                    </div>
+                </div>
+
+                <div class="detallesTotal">
+                    <div>
+                        <div  class="circulo ">
+                            <svg id="totalDineroC" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="12" y1="17" x2="12" y2="3" />
+                                <path d="M15 6l-3 -3l-3 3" />
+                                <circle cx="12" cy="19" r="2" />
+                            </svg>
+                            <p id="totalDinero" class="azul"></p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div  class="circulo azul ">
+                            <svg id="ultimoRegistroC" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="12" y1="17" x2="12" y2="3" />
+                                <path d="M15 6l-3 -3l-3 3" />
+                                <circle cx="12" cy="19" r="2" />
+                            </svg>
+                            <p id="ultimoRegistro" class="azul"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="todo">
+
+                    <a href="MisRegistros.html" class="deWallet"><svg xmlns="http://www.w3.org/2000/svg" class="  icon icon-tabler icon-tabler-receipt" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                      </svg></a>
+                    <a href="Presupuestos.html" class="deWallet"><svg xmlns="http://www.w3.org/2000/svg" class="  icon icon-tabler icon-tabler-receipt-tax" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="9" y1="14" x2="15" y2="8" />
+                        <circle cx="9.5" cy="8.5" r=".5" fill="currentColor" />
+                        <circle cx="14.5" cy="13.5" r=".5" fill="currentColor" />
+                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
+                        </svg>
+                    </a>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class='tronco__completo' id="casa">
+    
+    <div class='infobotones'>
+         <h2 class='celeste'><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <polyline points="5 12 3 12 12 3 21 12 19 12" />
+          <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+          <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+        </svg> Casa </h2>
+         
+         <p class='celeste'>Los botones representan la activacion de PIN o un rele en el modulo ESP8266</p>
+     </div>
+
+    <div class='botones'>
+        <button class='encender1' type='button' onclick=location.href='/RELE1=ON' >Encender Luz</button>
+        <button class='apagar1' type='button' onclick=location.href='/RELE1=OFF'>Apagar Luz</button>
+    </div>
+    <div class='botones'>
+         <button class='encender1' type='button' onclick=location.href='/RELE2=ON' >Encender Dispositivo 1</button>
+         <button class='apagar1' type='button' onclick=location.href='/RELE2=OFF'>Apagar Dispositivo 1</button>
+     </div>
+     <div class='botones'>
+         <button class='encender1' type='button' onclick=location.href='/RELE3=ON' >Encender Dispositivo 2</button>
+         <button class='apagar1' type='button' onclick=location.href='/RELE3=OFF'>Apagar Dispositivo 2</button>
+     </div>
+     <div class='botones'>
+         <button class='encender1' type='button' onclick=location.href='/RELE4=ON' >Encender Dispositivo 3</button>
+         <button class='apagar1' type='button' onclick=location.href='/RELE4=OFF'>Apagar Dispositivo 3</button>
+     </div>
+     <div class='botones'>
+         <button class='encender1' type='button' onclick=location.href='/RELES=ON' >Encender Todos los Dispositivos</button>
+         <button class='apagar1' type='button' onclick=location.href='/RELES=OFF'>Apagar Todos los Dispositivos</button>
+     </div>
+ </div>
+
+  <div class='tronco__completo' id="jarvis">
+   <div class='infobotones'>
+       <h2 class='celeste'><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#41ebf1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="4" width="16" height="16" rx="1" />
+        <line x1="4" y1="8" x2="20" y2="8" />
+        <line x1="8" y1="4" x2="8" y2="8" />
+      </svg> JARVIS 3.0 </h2>
+       
+       <p class='celeste'>Instrucciones de como utilizar la app J.A.R.V.I.S</p>
+   </div>
+       <div class='tronco__completo__informacion'>
+           <p>Los comandos que se pueden utilizar son:</p>
+           <div class='tarjetasComando'>
+               <div class='comando'>
+                   <h3 class='titulo'>Google</h3>
+                   <p>Al escribir Google en la plataforma, se mostrará un espacio para escribir que pagina a abrir</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>El sistema está diseñado para reconocer que pagina desea abrir solo con el comando [ Busca ]</p>
+               </div>
+               <div class='comando'>
+                   <h3 class='titulo'>Administrador</h3>
+                   <p>El comando [ admin ] se ejecuta para abrir distintas opciones que necesitan permisos</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Este comando no tiene atajos de Voz</p>
+               </div>
+           </div>
+           <div class='tarjetasComando'>
+               <div class='comando'>
+                   <h3 class='titulo'>Herramientas Microsoft</h3>
+                   <p>Los comandos con los nombres de cada herramientan [ Word ][ Excel ][ Power Point ] hacen que la app se abra</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Este comando no tiene atajos de Voz</p>
+               </div>
+               <div class='comando'>
+                   <h3 class='titulo'>Clases</h3>
+                   <p>Este comando abre un espacio donde se encuentran los links de cada clase</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>El sistema está diseñado para reconocer cual clase deseas abrir con el hecho de mencionarla</p>
+               </div>
+           </div>
+           <div class='tarjetasComando'>
+               <div class='comando'>
+                   <h3 class='titulo'>Whatsapp</h3>
+                   <p>Al escribir este comando se abre Whatsapp Web para enviar un mensaje</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Cuando mencionas a que contacto mandar el mensaje, este lo busca y con el comando[ diciendo ] le envia un mensaje de lo que se menciona despues</p>
+               </div>
+               <div class='comando'>
+                   <h3 class='titulo'>Youtube</h3>
+                   <p>Este comando busca un video de Youtube </p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Cuando se ejecuta el comando, la aplicacion muestra un espacio donde se puede descargar el video seleccionado</p>
+               </div>
+           </div>
+           <div class='tarjetasComando'>
+               <div class='comando'>
+                   <h3 class='titulo'>Actualizar</h3>
+                   <p>Este comando nos permite [ Actualizar ] la pagina en la que estamos</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Este comando no tiene atajos de Voz</p>
+               </div>
+               <div class='comando'>
+                   <h3 class='titulo'>G-mail</h3>
+                   <p>Este comando busca en Google la plataforma G-mail</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>puede abrir todas las herramientas que proporciona esta pagina</p>
+               </div>
+           </div>
+           <div class='tarjetasComando'>
+               <div class='comando'>
+                   <h3 class='titulo'>Escribe</h3>
+                   <p>Este comando [ Escribe ] un texto dado por Voz </p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Al ejecutar este comando, lo siguiente es lo que Jarvis va a escribir</p>
+               </div>
+               <div class='comando'>
+                   <h3 class='titulo'>Web</h3>
+                   <p>Al llamar este comando, se abre esta pagina web y con ayuda del modulo ESP8266 se ejecutan distintas actividades</p>
+                   <h4 class='verde'>Voz:</h4>
+                   <p>Continuara...</p>
+               </div>
+           </div>
+       </div>
+  </div>
+
+
+  <footer class="btn-wrap">
+      <p class="foter">Cesar Lopez</p>
+        <!-- <span>Cesar Lopez</span>
+
+        <div class="contenido">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+        </div> -->
+    </footer>
+    <script type="module" src="js/script.js"></script>
+    <!-- <script type="module" src="js/cuentas.js"></script> -->
+    
+    
+</body>
+</html>
