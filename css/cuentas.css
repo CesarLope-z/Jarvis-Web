@@ -37,7 +37,7 @@ body{
 }
 .inputs{
     gap: 1rem;
-
+    text-align: center;
 }
 .input{
     background-color: black;
