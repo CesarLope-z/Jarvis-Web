@@ -1,0 +1,115 @@
+body{
+    background-image: url(../img/fondoCuenta.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.grid{
+    display: grid;
+}
+.flex{
+    display: flex;
+}
+.justifyC{
+    justify-content: center;
+}
+.justifySA{
+    justify-content: space-around;
+}
+.alignItemCenter{
+    align-items: center;
+}
+.tAC{
+    text-align: center;
+}
+.blur{
+    background: rgba(44, 41, 41, 0.2);
+    backdrop-filter: blur(50px);
+}
+.fW{
+    font-weight: 700;
+}
+.area{
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+
+    border-radius: 0.5rem;
+}
+.inputs{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+
+}
+.input{
+    background-color: black;
+    color: rgb(115, 241, 65);
+    border-radius: 0.5rem;
+
+    padding: 0.3rem 1rem;
+}
+/* ///////////////////////////////////////////////////// */
+.registroT{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+    border: 2px solid yellow;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+.iconoT{
+    border: 2px solid yellow;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.yll{
+    color: yellow;
+}
+/* ////////////////////////////////////////////////////// */
+
+.registroG{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+    border: 2px solid red;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+.iconoG{
+    border: 2px solid red;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.rd{
+    color: red;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+.registroI{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+    border: 2px solid #73f141;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+.iconoI{
+    border: 2px solid rgb(115, 241, 65);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.gn{
+    color: #73f141;
+}
+@media (max-width: 680px) {
+    .inputs{
+        display: grid;
+    }
+}
