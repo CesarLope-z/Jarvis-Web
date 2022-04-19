@@ -112,7 +112,7 @@ gasto(cuenta, dinero){
           }
      }
      transferir(cuentaEmisora, cuentaReceptora, dinero){
-          alert('Por el momento no se ha configurado la transferencia de cuentas')
+          //alert('Por el momento no se ha configurado la transferencia de cuentas')
      }
 }
 const cuenta = new Cuenta;
