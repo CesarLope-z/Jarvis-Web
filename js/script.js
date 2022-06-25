@@ -3,6 +3,7 @@
 const listaTweets = document.querySelector('#lista-tweets');
 const formulario = document.querySelector('#formulario');
 const formularioNota = document.querySelector('#addNota');
+const botonBorrarTodo = document.querySelector('#borrar-todo')
 
 const totalDinero = document.querySelector('#totalDinero');
 const ultimoRegistro = document.querySelector('#ultimoRegistro');
@@ -37,6 +38,8 @@ function eventListeners() {
      formulario.addEventListener('submit', agregarTweet);
 
      formularioNota.addEventListener('submit', agregarNota);
+
+     botonBorrarTodo.addEventListener('click', borrarTodo);
 
      // Borrar Tweets
      listaTweets.addEventListener('click', borrarTweet);
@@ -359,4 +362,9 @@ function crearHTML3(){
      ui.mostrarTotal();
      ui.mostrarUltimoRegistro();
      
+}
+function borrarTodo(e){
+     e.preventDefault();
+     notasGlobal = [];
+     crearHTML2();
 }

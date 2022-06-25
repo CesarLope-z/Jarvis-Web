@@ -1,0 +1,30 @@
+.alignItemCenter {
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+.p-1{
+    padding: 1rem;
+}
+.br-05{
+    border-radius: 0.5rem;
+}
+.border-azul{
+    border: 1px solid #41ebf1;
+}

@@ -106,7 +106,7 @@ img {
     text-align: center;
 }
 .tronco__completo{
-    border: 1px solid rgb(65, 235, 241);
+    border: 1px solid #41ebf1;
     border-radius: 0.5rem;
 }
 .tronco__completo__informacion{
@@ -440,6 +440,15 @@ scroll-page {
 .bueno{
     transform: rotate(125deg);
     animation: rotarBueno 3s infinite;
+}
+.borrarTodo{
+    padding: 0 1rem;
+
+}
+.borrarTodo:hover{
+    background-color: red;
+    border: none;
+    color: black;
 }
 @keyframes rotarBueno{
     50% { transform: rotate(110deg);}
